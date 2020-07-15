@@ -175,7 +175,19 @@ pm <-readr::read_csv(here("docs", "pm25_data.csv"))
 We will also use the `%>%` pipe which can be used to define the input for later sequential steps. This will make more sense when we have multiple sequential steps using the same data object. To use the pipe notation we need to install and load dplyr as well.
 
 
-to make click exapand section use:
+Scrollable content:
+
+#### {.scrollable }
+```{r}
+# Scroll through the output!
+pm %>% 
+  distinct(state) %>%
+  print(n = 1e3)
+```
+####
+
+
+To make click expand section use:
 
 <details><summary> Click here to see more info </summary>
 
@@ -185,6 +197,11 @@ text text
 
 Note!!! You cannot use scroll features inside detail sections unless it is the last header section! Otherwise it will cause the other headers to be missing and other issues. 
 
+You can still do this if you leave an open details section like this and then have a section header at the same level as this section:
+
+<details><summary> Click here to see more info </summary>
+
+text text
 
 Scrollable content:
 
