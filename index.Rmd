@@ -48,6 +48,12 @@ knitr::include_graphics(here::here("img", "mainplot.png"))
 
 **Disclaimer**: The purpose of the [Open Case Studies](https://opencasestudies.github.io){target="_blank"} project is **to demonstrate the use of various data science methods, tools, and software in the context of messy, real-world data**. A given case study does not cover all aspects of the research process, is not claiming to be the most appropriate way to analyze a given data set, and should not be used in the context of making policy decisions without external consultation from scientific experts. 
 
+
+## {.license_block}
+
+This work is licensed under the Creative Commons Attribution-NonCommercial 3.0 [(CC BY-NC 3.0)](https://creativecommons.org/licenses/by-nc/3.0/us/){target="_blank"}  United States License.
+
+
 ## **Motivation**
 *** 
 
@@ -167,6 +173,18 @@ pm <-readr::read_csv(here("docs", "pm25_data.csv"))
 *** 
 
 We will also use the `%>%` pipe which can be used to define the input for later sequential steps. This will make more sense when we have multiple sequential steps using the same data object. To use the pipe notation we need to install and load dplyr as well.
+
+
+to make click exapand section use:
+
+<details><summary> Click here to see more info </summary>
+
+text text
+
+</details>
+
+Note!!! You cannot use scroll features inside detail sections unless it is the last header section! Otherwise it will cause the other headers to be missing and other issues. 
+
 
 Scrollable content:
 
