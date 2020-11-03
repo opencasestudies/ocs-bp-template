@@ -18,12 +18,13 @@ output:
 ---
 <style>
 #TOC {
-  background: url("https://opencasestudies.github.io/img/logo.jpg");
+  background: url("https://opencasestudies.github.io/img/logo.png");
   background-size: contain;
   padding-top: 240px !important;
   background-repeat: no-repeat;
 }
 </style>
+
 
 
 
