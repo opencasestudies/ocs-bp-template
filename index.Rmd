@@ -18,7 +18,7 @@ output:
 ---
 <style>
 #TOC {
-  background: url("https://opencasestudies.github.io/img/logo.png");
+  background: url("https://opencasestudies.github.io/img/icon.png");
   background-size: contain;
   padding-top: 240px !important;
   background-repeat: no-repeat;
@@ -45,24 +45,42 @@ knitr::include_graphics(here::here("img", "mainplot.png"))
 
 ####
 
-## {.disclaimer_block}
+#### {.disclaimer_block}
 
 **Disclaimer**: The purpose of the [Open Case Studies](https://opencasestudies.github.io){target="_blank"} project is **to demonstrate the use of various data science methods, tools, and software in the context of messy, real-world data**. A given case study does not cover all aspects of the research process, is not claiming to be the most appropriate way to analyze a given data set, and should not be used in the context of making policy decisions without external consultation from scientific experts. 
 
+####
 
-## {.license_block}
+#### {.license_block}
 
 This work is licensed under the Creative Commons Attribution-NonCommercial 3.0 [(CC BY-NC 3.0)](https://creativecommons.org/licenses/by-nc/3.0/us/){target="_blank"}  United States License.
 
+####
 
-## **Motivation**
+#### {.reference_block}
+
+To cite this case study please use:
+
+Wright, Carrie and Ontiveros, Michael and Jager, Leah and Taub, Margaret and Hicks, Stephanie. (2020). https://github.com/opencasestudies/ocs-bp-co2-emissions. Exploring CO2 emissions across time (Version v1.0.0).
+
+####
+
+To access the GitHub repository for this case study see here: https://github.com//opencasestudies/ocs-bp-co2-emissions.
+This case study is part of a series of public health case studies for the [Bloomberg American Health Initiative](https://americanhealth.jhu.edu/open-case-studies).
+
+
+# **Motivation**
 *** 
 
 
-### **Content Header**
+## **Content Header**
 *** 
 
 Content content
+
+
+### **content header additional level**
+***
 
 > Content for quotes
 
@@ -96,7 +114,7 @@ Yanosky, J. D. et al. Spatio-temporal modeling of particulate air pollution in t
 ####
 
 
-## **Main Questions**
+# **Main Questions**
 *** 
 
 #### {.main_question_block}
@@ -107,13 +125,37 @@ Yanosky, J. D. et al. Spatio-temporal modeling of particulate air pollution in t
 
 ####
 
-## **Learning Objectives** 
+# **Learning Objectives** 
 *** 
 
-In this case study, we will CONTENT... We will especially focus on using packages and functions from the [`Tidyverse`](https://www.tidyverse.org/){target="_blank"}, such as `package_name`, `package_name`. The tidyverse is a library of packages created by RStudio. While some students may be familiar with previous R programming packages, these packages make data science in R especially efficient.
+In this case study, we will explore CO2 emission data from around the world. 
+We will also focus on the US specifically to evaluate patterns of temperatures and natural disaster activity. 
 
+This case study will particularly focus on how to use different datasets that span different ranges of time, as well as how to create visualizations of patterns over time. 
+We will especially focus on using packages and functions from the [`tidyverse`](https://www.tidyverse.org/){target="_blank"}, such as `dplyr`, `tidyr`, and `ggplot2`. 
 
-```{r, out.width = "20%", echo = FALSE, fig.align ="center"}
+The tidyverse is a library of packages created by RStudio. 
+While some students may be familiar with previous R programming packages, these packages make data science in R especially legible and intuitive.
+
+The skills, methods, and concepts that students will be familiar with by the end of this case study are:
+
+<u>**Data Science Learning Objectives:**</u>  
+
+1. Importing data from various types of Excel files and CSV files
+2. Apply action verbs in `dplyr` for data wrangling
+3. How to pivot between "long" and "wide" datasets
+4. Joining together multiple datasets using `dplyr`
+5. How to create effective longitudinal data visualizations with `ggplot2`
+6. How to add text, color, and labels to `ggplot2` plots
+7. How to create faceted `ggplot2` plots
+
+<u>**Statistical Learning Objectives:**</u>  
+
+1. Introduction to correlation coefficient as a summary statistic
+2. Relationship between correlation and linear regression
+3. Correlation is not causation
+
+```{r, out.width = "20%", echo = FALSE, fig.align = "center"}
 include_graphics("https://tidyverse.tidyverse.org/logo.png")
 ```
 
@@ -139,10 +181,10 @@ library(dplyr)
 The first time we use a function, we will use the `::` to indicate which package we are using. Unless we have overlapping function names, this is not necessary, but we will include it here to be informative about where the functions we will use come from.
 
 
-## **Context**
+# **Context**
 *** 
 
-## **Limitations**
+# **Limitations**
 *** 
 There are some important considerations regarding this data analysis to keep in mind: 
 
@@ -151,7 +193,7 @@ There are some important considerations regarding this data analysis to keep in 
 2) Limitaiton 2  
 
 
-## **What are the data?**
+# **What are the data?**
 *** 
 
 If you want to make a table about variable info:
@@ -161,7 +203,7 @@ Variable   | Details
 **variable1**  | Variable info  <br> -- more details <br> -- more detials <br>  **Example**: Content content  
 **variable2**  | Variable info  <br> -- more details <br> -- more detials <br>  **Example**: Content content
 
-## **Data Import**
+# **Data Import**
 *** 
 
 Put files in docs directory and use `here` package.
@@ -170,7 +212,7 @@ Put files in docs directory and use `here` package.
 pm <-readr::read_csv(here("docs", "pm25_data.csv"))
 ```
 
-## **Data Exploration and Wrangling**
+# **Data Exploration and Wrangling**
 *** 
 
 We will also use the `%>%` pipe which can be used to define the input for later sequential steps. This will make more sense when we have multiple sequential steps using the same data object. To use the pipe notation we need to install and load dplyr as well.
@@ -222,20 +264,33 @@ pm %>%
 ####
 
 
-## **Data Analysis**
+# **Data Visualization**
 *** 
 
-### **content header**
+
+# **Data Analysis**
 *** 
 
-## **Data Visualization**
+## **content header**
+*** 
+### **content header additional level**
+***
+
+
+# **Summary**
 *** 
 
-## **Summary**
-*** 
+## **Synopsis**
+***
+## **Summary Plot**
+***
 
 ## **Suggested Homework**
 *** 
+
+
+# **Additional Information**
+***
 
 ## **Helpful Links**
 *** 
@@ -273,3 +328,9 @@ guide for [preprocessing with recipes](http://www.rebeccabarter.com/blog/2019-06
 [tibble](https://tibble.tidyverse.org/){target="_blank"}     | to create data objects that we can manipulate with  dplyr/stringr/tidyr/purrr  
 [tidyr](https://tidyr.tidyverse.org/){target="_blank"}      | to separate data within a column into multiple columns 
 [ggplot2](https://ggplot2.tidyverse.org/){target="_blank"}    | to make visualizations with multiple layers  
+
+## **Session Info**
+***
+
+## **Acknowledgments**
+***
