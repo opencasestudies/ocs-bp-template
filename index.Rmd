@@ -331,6 +331,9 @@ guide for [preprocessing with recipes](http://www.rebeccabarter.com/blog/2019-06
 
 ## **Session Info**
 ***
-
+```{r}
+library(devtools)
+session_info()
+```
 ## **Acknowledgments**
 ***
