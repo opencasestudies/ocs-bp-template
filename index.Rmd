@@ -234,8 +234,23 @@ Within your case study project folder, put the data files as they came from the 
 pm <-readr::read_csv(here("data", "raw", "pm25_data.csv"))
 ```
 
+At the end of the data import section, save the imported data as .rda files to allow users to stop and pick up where they left off: 
+
+```{r}
+save(pm, file = here::here("data", "imported", "pm25_data_imported.rda"))
+```
+
+
 # **Data Exploration and Wrangling**
 *** 
+At the beginning of this section, include the following message:
+
+If you have been following along but stopped, we could load our imported data like so:
+
+```{r}
+load(here::here("data", "imported", "pm25_data_imported.rda"))
+```
+
 
 We will also use the `%>%` pipe which can be used to define the input for later sequential steps. This will make more sense when we have multiple sequential steps using the same data object. To use the pipe notation we need to install and load dplyr as well.
 
