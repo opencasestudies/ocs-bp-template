@@ -243,7 +243,7 @@ save(pm, file = here::here("data", "imported", "pm25_data_imported.rda"))
 
 # **Data Exploration and Wrangling**
 *** 
-At the beginning of this section, include the following message:
+At the beginning of the section, include the following message:
 
 If you have been following along but stopped, we could load our imported data like so:
 
@@ -251,15 +251,33 @@ If you have been following along but stopped, we could load our imported data li
 load(here::here("data", "imported", "pm25_data_imported.rda"))
 ```
 
+Also provide guidance for users who may have skipped the previous section, see the following example: 
+
+***
+<details> <summary> If you skipped the data import section click here. </summary>
+
+An RDA version (stands for R data) of the data can be found [here](https://github.com//opencasestudies/ocs-bp-co2-emissions/tree/master/data/imported) or slightly more directly [here](https://raw.githubusercontent.com/opencasestudies/ocs-bp-co2-emissions/master/data/imported/co2_data_imported.rda). Download this file and then place it in your current working directory within a subdirectory called "imported" within a directory called "data" to use the following code. We used an RStudio project and the [`here` package](https://github.com/jennybc/here_here) to navigate to the file more easily.
+
+```{r}
+load(here::here("data", "imported", "co2_data_imported.rda"))
+```
+
+</details>
+***
+
+Use this section to walk through any exploration of the data conducted pre-analysis. Then, explain step-by-step the data wrangling process used to prepare the data for analysis. Note that not all case studies include a data exploration. Data exploration and wrangling may also be split into two sections. 
 
 We will also use the `%>%` pipe which can be used to define the input for later sequential steps. This will make more sense when we have multiple sequential steps using the same data object. To use the pipe notation we need to install and load dplyr as well.
+(avocado do we want to keep this line above in the template?)
 
-Can add DT tables too- note that you can`t use these inside a click expand details section.
+Can include DT tables too: 
 
 ```{r}
 library(DT)
 DT::datatable(iris)
 ```
+
+(note that you can`t use these inside a click expand details section.)
 
 Scrollable content:
 
@@ -300,6 +318,16 @@ pm %>%
 ```
 ####
 
+At the end of this section, include the following:
+
+To allow users to skip import and wrangling we will save the data as an RDA file as well as a CSV file as this is often useful to send our data to collaborators. We will save this in a “wrangled” subdirectory of our “data” directory of our working directory.
+
+```{r}
+save(pm, file = here::here("data", "wrangled", "wrangled_data.rda")) 
+readr::write_csv(pm, path = here::here("data","wrangled", "wrangled_data.csv"))
+```
+
+Replace `pm` with the name of the data object created at the end of data wrangling. 
 
 # **Data Visualization**
 *** 
