@@ -356,8 +356,34 @@ load(here::here("data", "wrangled", "wrangled_data.rda"))
 
 Use this section to walk through step by step how the wrangled data was visualized. Explain how these visualizations improve understanding and help extract insights. 
 
+If any further wrangling was conducted in this section, please save the most recent version of the data similar to previous sections. 
+
 # **Data Analysis**
 *** 
+At the beginning of the section, include the following message:
+
+If you have been following along but stopped, we could load our wrangled data like so:
+
+```{r}
+load(here::here("data", "wrangled", "wrangled_data.rda"))
+```
+
+Also provide guidance for users who may have skipped the previous section, see the following example: 
+
+***
+<details> <summary> If you skipped the data import section click here. </summary>
+
+An RDA file (stands for R data) of the data can be found [here](https://github.com//opencasestudies/ocs-bp-co2-emissions/tree/master/data/wrangled) or slightly more directly [here](https://raw.githubusercontent.com/opencasestudies/ocs-bp-co2-emissions/master/data/wrangled/wrangled_data.rda). Download this file and then place it in your current working directory within a subdirectory called "wrangled" within a subdirectory called "data" to use the following code. We used an RStudio project and the [`here` package](https://github.com/jennybc/here_here) to navigate to the file more easily.
+
+
+```{r}
+load(here::here("data", "wrangled", "wrangled_data.rda"))
+```
+
+</details>
+***
+
+Use this section to walk through the methods and code used in the data analysis step=by-step. Explain how this analysis helps answer the main questions posed earlier in the case study. 
 
 ## **content header**
 *** 
@@ -367,18 +393,27 @@ Use this section to walk through step by step how the wrangled data was visualiz
 
 # **Summary**
 *** 
-
 ## **Synopsis**
 ***
+Briefly recap everything that was covered in the case study from the motivation to data analysis. Highlight the conclusions made and suggest any limitations or future work to be done.
+
 ## **Summary Plot**
 ***
+Construct a plot here that summarizes the conclusions found in the data, if applicable. 
 
-## **Suggested Homework**
+# **Suggested Homework**
 *** 
+Suggest extra exercises using this data for students to practice the skills used in the case study. 
 
+Examples from [CO2 case study](https://github.com/opencasestudies/ocs-bp-co2-emissions/): 
+
+Ask students to create a plot with labels showing the countries with the lowest CO2 emission levels.
+
+Ask students to plot CO2 emissions and other variables (e.g. energy use) on a scatter plot, calculate the Pearson's correlation coefficient, and discuss results. 
 
 # **Additional Information**
 ***
+Use this section to provide any additional information or resources on the topics and methods covered in the case study. 
 
 ## **Helpful Links**
 *** 
@@ -419,9 +454,10 @@ guide for [preprocessing with recipes](http://www.rebeccabarter.com/blog/2019-06
 
 ## **Session Info**
 ***
+
 ```{r}
-library(devtools)
-session_info()
+devtools::session_info()
 ```
+
 ## **Acknowledgments**
 ***
