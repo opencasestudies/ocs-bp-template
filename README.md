@@ -1,3 +1,5 @@
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
 ## README
 
 Your case study project should include a README.md file. The README from the [CO2 Emissions](https://www.opencasestudies.org/ocs-bp-co2-emissions) case study is provided here as an example/template:  

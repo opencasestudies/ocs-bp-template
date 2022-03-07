@@ -196,8 +196,6 @@ Provide a link to the source and briefly explain its use for each package in the
 
 The first time we use a function, we will use the `::` to indicate which package we are using. Unless we have overlapping function names, this is not necessary, but we will include it here to be informative about where the functions we will use come from.
 
-Note: Using the method described above is preferred, but not necessary. (avocado is this ok to say?) 
-
 # **Context**
 *** 
 Provide some more details and background on the case study topic and its relation to public health/the world. 
@@ -226,7 +224,7 @@ Variable   | Details
 
 # **Data Import**
 *** 
-Describe how to import your case study data files into R: (avocado or python?)
+Describe how to import your case study data files into R or Python:
 
 Within your case study project folder, put the data files as they came from the source into a 'data/raw/' subfolder and use the `here` package. See the following example: 
 
@@ -268,7 +266,6 @@ load(here::here("data", "imported", "co2_data_imported.rda"))
 Use this section to walk through any exploration of the data conducted pre-analysis. Then, explain step-by-step the data wrangling process used to prepare the data for analysis. Note that not all case studies include a data exploration. Data exploration and wrangling may also be split into two sections. 
 
 We will also use the `%>%` pipe which can be used to define the input for later sequential steps. This will make more sense when we have multiple sequential steps using the same data object. To use the pipe notation we need to install and load dplyr as well.
-(avocado do we want to keep this line above in the template?)
 
 Can include DT tables too: 
 
