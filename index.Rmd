@@ -220,7 +220,7 @@ If you want to make a table about variable info, use the following table templat
 Variable   | Details                                                                        
 ---------- |-------------
 **variable1**  | Variable info  <br> -- more details <br> -- more details <br>  **Example**: Content content  
-**variable2**  | Variable info  <br> -- more details <br> -- more detials <br>  **Example**: Content content
+**variable2**  | Variable info  <br> -- more details <br> -- more details <br>  **Example**: Content content
 
 # **Data Import**
 *** 
