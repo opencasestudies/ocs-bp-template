@@ -11,8 +11,10 @@ Dockerfile
 Dockerhub
 dplyr
 DT
+et
 favicon
 forcats
+GGally
 ggplot
 ggplot2
 ggrepel
@@ -31,6 +33,7 @@ NonCommercial
 Ontiveros
 OpenCaseStudies
 OTTR
+pdftools
 pre
 purrr
 rda
@@ -41,6 +44,7 @@ Rmd
 repo
 scrollable
 skimr
+Spatio
 stringr
 subdir
 subfolder
