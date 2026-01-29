@@ -121,7 +121,7 @@ Provide references for your images/content:
 
 #### {.reference_block}
 
-Yanosky, J. D. et al. Spatio-temporal modeling of particulate air pollution in the conterminous United States using geographic and meteorological predictors. *Environ Health* 13, 63 (2014).
+Yanosky, J. D. et al. Spatio-temporal modeling of particulate air pollution in the conterminous United States using geographic and meteorological predictors. *Environmental Health* 13, 63 (2014).
 
 ####
 
@@ -208,7 +208,7 @@ There are some important considerations regarding this data analysis to keep in 
 
 1) Limitation 1  
 
-2) Limitaiton 2  
+2) Limitation 2  
 
 
 # **What are the data?**
@@ -219,7 +219,7 @@ If you want to make a table about variable info, use the following table templat
 
 Variable   | Details                                                                        
 ---------- |-------------
-**variable1**  | Variable info  <br> -- more details <br> -- more detials <br>  **Example**: Content content  
+**variable1**  | Variable info  <br> -- more details <br> -- more details <br>  **Example**: Content content  
 **variable2**  | Variable info  <br> -- more details <br> -- more detials <br>  **Example**: Content content
 
 # **Data Import**
