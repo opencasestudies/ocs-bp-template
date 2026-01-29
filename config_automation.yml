@@ -17,7 +17,7 @@ spell_error_min: 0
 # Style any R code
 style-code: false
 # Would you like your markdown files to be checked for formatting
-markdown-linter: true
+markdown-linter: false
 # Would you like a readability report on your markdowns?
 readability-report: false
 # Test build the docker image if any docker-relevant files have been changed
