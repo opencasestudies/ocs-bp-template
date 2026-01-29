@@ -92,7 +92,7 @@ We include a thorough and introductory explanation of ggplot2 including how to a
 
 ### Analysis 
 
-In this case study we look at the correaltion between CO2 emissions and annual average temperatures in the US. We also evaluate the association between the two using a linear regression. We discuss the relationship between correlation and linear regression and how we interpret the findings.
+In this case study we look at the correlation between CO2 emissions and annual average temperatures in the US. We also evaluate the association between the two using a linear regression. We discuss the relationship between correlation and linear regression and how we interpret the findings.
 
 
 ### Other notes and resources
