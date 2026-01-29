@@ -15,7 +15,7 @@ spell_error_min: 0
 
 #### Other options
 # Style any R code
-style-code: true
+style-code: false
 # Would you like your markdown files to be checked for formatting
 markdown-linter: true
 # Would you like a readability report on your markdowns?
