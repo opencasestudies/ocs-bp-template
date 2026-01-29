@@ -34,6 +34,7 @@ OTTR
 pre
 purrr
 rda
+README
 readr
 readxl
 Rmd
