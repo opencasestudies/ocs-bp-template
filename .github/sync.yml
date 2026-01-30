@@ -14,8 +14,8 @@ group:
         dest: .github/workflows/pull_request.yml      
       - source: .github/workflows/render_site.yml
         dest: .github/workflows/render_site.yml
-      - source: docs/ # will remove after first sync
-        dest: docs/ # will remove after first sync
+      - source: docs/Untitled # will remove after first sync
+        dest: docs/Untitled # will remove after first sync
       - source: _site.yml
         dest: _site.yml
       - source: img/icon-32.png
