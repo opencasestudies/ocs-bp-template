@@ -12,7 +12,7 @@ output:
     toc_float: yes
   word_document:
     toc: yes
-
+always_allow_html: true
 ---
 <style>
 #TOC {
