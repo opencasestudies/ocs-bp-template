@@ -2,6 +2,7 @@
 title: "Open Case Studies : Title "
 css: style.css
 output:
+  always_allow_html: true
   html_document:
     self_contained: yes
     code_download: yes
