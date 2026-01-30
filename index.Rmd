@@ -88,7 +88,7 @@ Attach quotes:
 
 > Content for quotes
 
-Attach images:
+Attach images: 
 
 ```{r, echo = FALSE, out.width="800px"}
 knitr::include_graphics(here::here("img","content_image.png"))
