@@ -65,7 +65,7 @@ Wright, Carrie and Ontiveros, Michael and Jager, Leah and Taub, Margaret and Hic
 
 ####
 
-In this space you should provide an open access link to the case study source files. This is necessary for users to get access to case study data, at a minimum. See the following example from the CO2 Emissions case study:
+In this space you should provide an open access link to the case study source files. This is necessary for users to get access to case study data, at a minimum. See the following example from the case study about CO2 Emissions:
 
 To access the GitHub repository for this case study see here: https://github.com//opencasestudies/ocs-bp-co2-emissions.
 This case study is part of a series of public health case studies for the [Bloomberg American Health Initiative](https://americanhealth.jhu.edu/open-case-studies).
