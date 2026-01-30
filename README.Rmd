@@ -109,7 +109,6 @@ In this case study we look at the correlation between CO2 emissions and annual a
 [Time series](https://en.wikipedia.org/wiki/Time_series){target="_blank"}   
 [Methods to account for autocorrelation](https://online.stat.psu.edu/stat462/node/188/){target="_blank"}  
 [US Environmental Protection Agency (EPA) Inventory of U.S. Greenhouse Gas Emissions and Sinks 2020 Report](https://www.epa.gov/sites/production/files/2020-04/documents/us-ghg-inventory-2020-main-text.pdf){target="_blank"}   
-[National Climate Assessment Report](https://data.globalchange.gov/report/nca3-overview){target="_blank"}    
 [Greenhouse gases](https://www.epa.gov/report-environment/greenhouse-gases){target="_blank"} 
 [Climate change](https://world101.cfr.org/global-era-issues/climate-change/climate-change-adaptations){target="_blank"}
 
