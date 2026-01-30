@@ -1,0 +1,56 @@
+# adapted from a file written by Candace Savonen
+# For info on how to update this file see: https://github.com/marketplace/actions/repo-file-sync-action#%EF%B8%8F-sync-configuration
+
+# Note that master branch needs to be renamed main for these repos
+group:
+  - files:
+      - source: .github/workflows/check-url.yml
+        dest: .github/workflows/check-url.yml
+      - source: .github/workflows/delete-preview.yml
+        dest: .github/workflows/delete-preview.yml 
+      - source: .github/workflows/docker-test.yml
+        dest: .github/workflows/docker-test.yml
+      - source: .github/workflows/pull_request.yml
+        dest: .github/workflows/pull_request.yml      
+      - source: .github/workflows/render_site.yml
+        dest: .github/workflows/render_site.yml
+      - source: docs/ # will remove after first sync
+        dest: docs/ # will remove after first sync
+      - source: _site.yml
+        dest: _site.yml
+      - source: img/icon-32.png
+        dest: img/icon-32.png
+      - source: config_automation.yml
+        dest: config_automation.yml
+      - source: resources/header.html
+        dest: resources/header.html
+      - source: resources/exclude_files.txt # will remove after first sync
+        dest: resources/exclude_files.txt # will remove after first sync
+      - source: resources/ignore_urls.txt # will remove after first sync
+        dest: resources/ignore_urls.txt # will remove after first sync
+      - source: resources/dictionary.txt # will remove after first sync
+        dest: resources/dictionary.txt # will remove after first sync
+  # Repositories to receive changes
+    repos: |
+      opencasestudies/ocs-bp-co2-emissions
+      opencasestudies/ocs-bp-co2-emissions-interactive-singleapp
+      opencasestudies/ocs-bp-diet
+      opencasestudies/ocs-bp-diet-interactive
+      opencasestudies/ocs-bp-youth-mental-health
+      opencasestudies/ocs-bp-RTC-analysis
+      opencasestudies/ocs-bp-air-pollution
+      opencasestudies/ocs-bp-vaping-case-study
+      opencasestudies/ocs-bp-RTC-wrangling
+      opencasestudies/ocs-bp-school-shootings-dashboard-interactive
+      opencasestudies/ocs-bp-school-shootings-dashboard
+      opencasestudies/ocs-bp-youth-disconnection
+      opencasestudies/ocs-bp-rural-and-urban-obesity
+      opencasestudies/ocs-bp-opioid-rural-urban
+      opencasestudies/ocs-bp-youth-mental-health-interactive
+      opencasestudies/ocs-bp-air-pollution-interactive
+      opencasestudies/ocs-bp-co2-emissions-interactive
+      opencasestudies/ocs-bp-school-shootings-flexdashboard
+      opencasestudies/school-shootings-datatable
+      
+###ADD NEW REPO HERE following the format above#
+      
